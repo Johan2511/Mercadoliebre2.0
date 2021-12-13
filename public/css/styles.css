@@ -1,0 +1,381 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+/* NORMALIZACIÓN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+  /* colores */
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  --negro: #000000;
+  --blanco: #ffffff;
+  /* tamaños de fuentes */
+  --text-sm: 1.2em;
+  --text-md: 1.6em;
+  --text-lg: 1.8em;
+  --title-md: 2.4em;
+  /* familias de fuentes */
+  --roboto: "Roboto", sans-serif;
+}
+
+/* ESTILOS COMUNES */
+
+html {
+  font-size: 62.5%;
+  font-family: var(--roboto);
+}
+
+body{
+    background-color: var(--gris-claro);
+}
+
+h2 {
+  font-size: var(--title-md);
+}
+
+p {
+  font-size: var(--text-sm);
+}
+
+/* ---------------------------- CABECERA ---------------------------- */
+
+div.top-header{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+header div.top-header p{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header{
+  background-color: #EAC926;
+}
+
+header picture.logo,
+header .form{
+  width: 50%;
+}
+
+header picture.logo{
+  padding: 10px;
+}
+header .form{
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  font-size: 11px;
+}
+header .nav{
+  display: none;
+}
+header nav{
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+header ul li{
+  list-style-type: none;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+header .form .input{
+  background-color: #FFF;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+  width: 100%;
+}
+
+header .form .submit{
+  background-color: #FFF;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+div.burger-menu{
+  text-align: center;
+}
+
+div.burger-menu i{
+  background-color: #0044AA;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+div.last-visit,
+div.offers{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price{
+  font-size: 18px;
+  width: 30%;
+}
+
+.discount{
+  width: 70%;
+}
+
+.discount,
+.description{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description{
+  color: #666;
+}
+
+.description{
+  display: none;
+  margin-top: 20px;
+}
+
+section.banner img{
+  width: 100%;
+}
+
+/* ---------------------------- MAIN ---------------------------- */
+
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article{
+  background-color: #fff;    
+  margin: 10px 0px;
+}
+
+main section article img{
+  width: 100%;
+}
+
+main section article i,
+.discount{
+  color: #39b54a;
+}
+
+main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+main section h3{
+  margin: 20px 0px;
+}
+
+article div.main-article{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+
+/* ---------------------------- MAIN FORM-REGISTER ---------------------------- */
+main .form-login,
+main .form-register{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  font-size: var(--text-md);
+}
+
+main .form-register div.campo{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+main .form-login label,
+main .form-register label{
+  margin-bottom: 5px;
+}
+
+main .form-login .block input,
+main .form-register .campo input{
+  padding: 6px 12px;
+}
+
+main .form-register .button{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+main .form-register .button button{
+  width: 100%;
+  padding: 6px 12px;
+}
+
+main .form-login .block{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+main .form-login .button button{
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: var(--celeste);
+  border: none;
+  color: var(--blanco);
+}
+
+/* ---------------------------- FOOTER ---------------------------- */
+.footer{
+    padding: 10px;
+    background-color: var(--blanco);
+}
+
+.footer .footer-icon{
+    text-align: center;
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer article{
+    margin: 24px;
+}
+
+.footer article h2{
+    text-align: center;
+}
+
+.footer article p{
+    padding: 20px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 361px){
+  /* HEADER */
+  header .nav{
+    display: block;
+  }
+  div.burger-menu {
+    display: none;
+  }
+  header .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav ul{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+  }
+  /* MAIN */
+  .description{
+    display: block;
+  }
+
+  main section article{
+    box-shadow: 0 0 10px var(--gris-oscuro);
+  }
+  main section article .description{
+    display: block;
+  }
+
+  main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  main section div.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main section div.products article{
+    width: 45%;
+  }
+
+  .price,
+  .discount{
+    width: 50%;
+  }
+
+  main .form-register{
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 769px){
+  header div.top-header{
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+  }
+  main section div.products article{
+    width: 22%;
+  }
+  /* ---------------------------- MAIN FORM-REGISTER ---------------------------- */
+  main .form-login{
+    max-width: 500px;
+  }
+  main .form-register{
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 700px;
+  }
+  main .form-register div.campo{
+    width: 45%;
+    margin: 10px 2.5%;
+  }
+  main .form-register div.block{
+    width: 100%;
+  }
+  main .form-register .button{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .form-register .button button{
+    width: auto;
+  }
+}
