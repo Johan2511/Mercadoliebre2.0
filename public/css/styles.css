@@ -104,6 +104,7 @@ header .form .input{
   color: #666;
   padding: 2px;
   width: 100%;
+
 }
 
 header .form .submit{
@@ -173,6 +174,10 @@ main{
 main section article{
   background-color: #fff;    
   margin: 10px 0px;
+}
+
+main section article:hover{
+box-shadow: 0px 0px 10px rgb(100 100 100);
 }
 
 main section article img{
