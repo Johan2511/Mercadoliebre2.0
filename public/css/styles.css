@@ -96,7 +96,7 @@ header ul li{
 
 header ul li a{
   text-decoration: none;
-  color: #000;
+  color: var(--gris-oscuro);
 }
 
 header .form .input{
@@ -235,6 +235,7 @@ main .form-register{
   flex-direction: column;
   margin: 20px auto;
   font-size: var(--text-md);
+  border: solid;
 }
 
 main .form-register div.campo{
@@ -297,6 +298,12 @@ main .form-login .button button{
     margin: 24px;
 }
 
+.footer article div{
+display: flex;
+justify-content: center;
+
+}
+
 .footer article h2{
     text-align: center;
 }
@@ -304,6 +311,9 @@ main .form-login .button button{
 .footer article p{
     padding: 20px;
     text-align: center;
+}
+.copyright{
+  text-align: center;
 }
 
 /* RESPONSIVE */
