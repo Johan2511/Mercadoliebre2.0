@@ -54,6 +54,8 @@ div.top-header{
   display: flex;
   flex-wrap: wrap;
   padding: 5%;
+  justify-content: center;
+  align-items: center;
 }
 
 header div.top-header p{
@@ -99,19 +101,22 @@ header ul li a{
 
 header .form .input{
   background-color: #FFF;
-  border: 1px solid #000;
+  border: 1px solid var(--gris-claro);
   outline: none;
-  color: #666;
-  padding: 2px;
+  color: var(--gris-oscuro);
+  padding: 7px;
   width: 100%;
+  border-radius: 5px 0 0 5px;
 
 }
 
 header .form .submit{
-  background-color: #FFF;
-  border: 1px solid #000;
+  background-color: var(--blanco);
+  border: 1px solid var(--negro);
   color: #666;
+  padding: 7px;
   width: 10%;
+  border-radius: 0 5px 5px 0 ;
 }
 
 div.burger-menu{
@@ -146,7 +151,7 @@ div.offers{
 
 .discount,
 .description{
-  font-size: 16px;
+  font-size: var(--text-md);
   font-weight: normal;
 }
 
@@ -186,7 +191,7 @@ main section article img{
 
 main section article i,
 .discount{
-  color: #39b54a;
+  color: var(--verde);
 }
 
 main section article i{
@@ -201,6 +206,12 @@ main section article i{
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: transform 0.3s ease-in;
+}
+
+main section article:hover i{
+  transform: rotate(-90deg);
+  transition-duration: 0.5s;
 }
 
 main section h3{
@@ -319,7 +330,7 @@ main .form-login .button button{
   }
 
   main section article{
-    box-shadow: 0 0 10px var(--gris-oscuro);
+    /* box-shadow: 0 0 10px var(--gris-oscuro); */
   }
   main section article .description{
     display: block;
