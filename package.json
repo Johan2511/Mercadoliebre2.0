@@ -1,7 +1,7 @@
 {
-  "name": "MercadoLiebre",
+  "name": "mercadoliebre",
   "version": "1.0.0",
-  "description": "Duplica de Mercado Liebre",
+  "description": "Replica de Mercado Liebre",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
@@ -12,7 +12,7 @@
     "CSS",
     "JavaScript"
   ],
-  "author": "Fabián",
+  "author": "Johan Mauricio Peñuela Hidalgo",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
